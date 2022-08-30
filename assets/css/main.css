@@ -3224,6 +3224,16 @@
 				color: #666 !important;
 			}
 
+			#banner .button.secondary {
+				background: #585353;
+				color: #fff;
+			}
+
+			#banner .button.tertiary {
+				background: grey;
+				color: #fff;
+			}
+
 /* Main */
 
 	#main {

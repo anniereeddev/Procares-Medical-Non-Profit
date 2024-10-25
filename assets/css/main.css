@@ -215,6 +215,7 @@
 		padding: 0.5em 0 0.5em 2em;
 	}
 
+	
 	pre {
 		-webkit-overflow-scrolling: touch;
 		background: #f8f8f8;
@@ -2062,6 +2063,8 @@
 			font-style: normal;
 		}
 
+
+
 /* Form */
 
 	form {
@@ -2256,6 +2259,13 @@
 		margin: 0 0 2em 0;
 		padding: 3em;
 	}
+
+	.logo {
+		height:3em;
+		margin:10px 0 0 0;
+		/* width:40px; */
+	}
+
 
 	.video2 {
 		height: 400px;
@@ -3069,7 +3079,7 @@
 			-webkit-animation: none;
 			-ms-animation: none;
 			animation: none;
-			background: none;
+			/* background: none; */
 			color: rgba(255, 255, 255, 0.75);
 			position: absolute;
 		}
@@ -3173,7 +3183,7 @@
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
 		color: #fff;
-		padding: 10em 0 14em 0;
+		padding: 7em 0 13em 0;
 		text-align: center;
 	}
 

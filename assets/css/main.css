@@ -2257,6 +2257,13 @@
 		padding: 3em;
 	}
 
+<<<<<<< HEAD
+=======
+	.video2 {
+		height: 400px;
+	}
+
+>>>>>>> parent of a1d700a (Updated logo, moved additional information to Information tab and made that page active)
 		.box > :last-child {
 			margin-bottom: 0;
 		}
@@ -3168,7 +3175,11 @@
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
 		color: #fff;
+<<<<<<< HEAD
 		padding: 12em 0 20em 0;
+=======
+		padding: 10em 0 14em 0;
+>>>>>>> parent of a1d700a (Updated logo, moved additional information to Information tab and made that page active)
 		text-align: center;
 	}
 

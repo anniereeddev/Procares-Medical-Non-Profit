@@ -151,6 +151,7 @@
 		margin: 0 0 0.5em 0;
 	}
 
+	
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
@@ -166,12 +167,16 @@
 		font-size: 1.75em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
+		color:black;
+		font-weight: 600;
 	}
 
 	h4 {
-		font-size: 1.1em;
+		font-size: 1.35em;
 		line-height: 1.5em;
 		letter-spacing: 0;
+		color: black;
+		font-weight:450;
 	}
 
 	h5 {
@@ -196,6 +201,12 @@
 		font-size: 0.8em;
 		position: relative;
 		top: -0.5em;
+	}
+
+	.sub {
+		font-size:1.2em;
+		font-weight: 300;
+		color:black;
 	}
 
 	hr {
@@ -1968,7 +1979,7 @@
 
 	.container {
 		margin: 0 auto;
-		max-width: calc(100% - 5em);
+		max-width: 100%;
 		width: 75em;
 	}
 
@@ -2259,11 +2270,24 @@
 		margin: 0 0 2em 0;
 		padding: 3em;
 	}
+	
+	.board {
+		margin: 10em 0 0 0;
+		max-width:100%;
+	}
 
 	.logo {
 		height:3em;
 		margin:0 0 0 0;
 		/* width:40px; */
+	}
+
+	.profile {
+		height:15em;
+	}
+
+	.profileBox {
+		
 	}
 
 
@@ -3272,6 +3296,7 @@
 				font-size: 2.75em;
 				margin: 0;
 			}
+
 
 			#main > header p {
 				border-top: solid 2px #e5e5e5;

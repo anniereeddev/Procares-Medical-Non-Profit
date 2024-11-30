@@ -2282,13 +2282,56 @@
 		/* width:40px; */
 	}
 
-	.profile {
-		height:15em;
+	.profilePicture {
+		height:13em;
+		cursor:pointer;
+		width:12em;
+		transition: transform 0.3s ease;
 	}
 
-	.profileBox {
-		
+	.modal {
+		display:none;
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		background-color: rgba(0,0,0,0.5);
+		z-index:1000;
+		align-items:center;
+		justify-content:center;
 	}
+
+	.profileDescription {
+		background: white;
+      	padding: 20px;
+      	border-radius: 8px;
+      	max-width: 500px;
+      	width: 80%;
+      	text-align: center;
+	}
+
+	.profilePicture:hover {
+		transform: scale(1.05);
+	}
+
+	.profileDescription {
+		background: white;
+		max-width: 500px;
+		width:88%;
+		text-align:left;
+	}
+
+	.close {
+		position: absolute;
+		top:16px;
+		right:10px;
+		font-size:18px;
+		font-weight:bold;
+		color:#333;
+		cursor:pointer;
+	}
+
 
 
 	.video2 {

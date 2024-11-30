@@ -81,4 +81,29 @@
 
 		}
 
+	// Picture Popup
+	<script>
+		{/* get modal, image, and close button */}
+		const modal = document.getElementById('myModal');
+		const triggerImage = document.getElementById('profilePicture');
+		const closeModal = document.getElementById('closeModal');
+
+		{/* Show modal on image click */}
+		triggerImage.addEventListener('click', () => {
+		modal.style.display = 'flex';
+		});
+
+		{/* Close modal on close button click */}
+		closeModal.addEventListener('click', () => {
+		modal.style.display = 'none';
+		});
+
+		{/* Close modal on clicking outside of modal content */}
+		window.addEventListener('click', (event) => {
+		if (event.target === modal) {
+			modal.style.display = 'none';
+		}
+		});
+	</script>
+
 })(jQuery);

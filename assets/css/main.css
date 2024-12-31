@@ -2023,6 +2023,8 @@
 
 		}
 
+
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -2261,76 +2263,7 @@
 		opacity: 1.0;
 	}
 
-/* Box */
 
-	.box {
-		background: #fff;
-		border-radius: 6px;
-		box-shadow: 0 2px 0 0 #e5e5e5;
-		margin: 0 0 2em 0;
-		padding: 3em;
-	}
-	
-	.board {
-		margin: 10em 0 0 0;
-		max-width:100%;
-	}
-
-	.logo {
-		height:3em;
-		margin:0 0 0 0;
-		/* width:40px; */
-	}
-
-	.profilePicture {
-		height:13em;
-		cursor:pointer;
-		width:12em;
-		transition: transform 0.3s ease;
-	}
-
-	.modal {
-		display:none;
-		position:fixed;
-		top:0;
-		left:0;
-		width:100%;
-		height:100%;
-		background-color: rgba(0,0,0,0.5);
-		z-index:1000;
-		align-items:center;
-		justify-content:center;
-	}
-
-	.profileDescription {
-		background: white;
-      	padding: 20px;
-      	border-radius: 8px;
-      	max-width: 500px;
-      	width: 80%;
-      	text-align: center;
-	}
-
-	.profilePicture:hover {
-		transform: scale(1.05);
-	}
-
-	.profileDescription {
-		background: white;
-		max-width: 500px;
-		width:88%;
-		text-align:left;
-	}
-
-	.close {
-		position: absolute;
-		top:16px;
-		right:10px;
-		font-size:18px;
-		font-weight:bold;
-		color:#333;
-		cursor:pointer;
-	}
 
 
 
@@ -3013,7 +2946,7 @@
 	}
 
 	#header {
-		background: #444;
+		background: #A5BAC0;;
 		color: #bbb;
 		cursor: default;
 		height: 3.25em;
@@ -3075,10 +3008,11 @@
 					}
 
 					#header nav > ul > li a:not(.button) {
-						color: #fff;
+						color: #0c0505;
 						display: inline-block;
 						text-decoration: none;
 						border: 0;
+						font-weight:400;
 					}
 
 						#header nav > ul > li a:not(.button).icon:before {
@@ -3105,7 +3039,7 @@
 		#header .button {
 			background-color: transparent;
 			box-shadow: inset 0 0 0 2px #999;
-			color: #fff;
+			color: black;
 		}
 
 			#header input[type="submit"]:hover,
@@ -3163,7 +3097,7 @@
 			#header.alt input[type="reset"],
 			#header.alt input[type="button"],
 			#header.alt .button {
-				box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+				box-shadow: inset 0 0 0 2px rgba(5, 3, 3, 0.5);
 			}
 
 				#header.alt input[type="submit"]:hover,
@@ -3243,23 +3177,16 @@
 /* Banner */
 
 	#banner {
-		background-attachment: scroll,							fixed;
+		background-attachment: scroll,fixed;
 		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
-		background-position: top left,						center center;
-		background-repeat: repeat,							no-repeat;
-		background-size: auto,							cover;
+		background-image: url("images/overlay.png"), url("../../images/friends_field_hearts.jpg");
+		background-position: top left, center center;
+		background-repeat: repeat, no-repeat;
+		background-size: auto, cover;
 		color: #fff;
 		padding: 7em 0 13em 0;
 		text-align: center;
-	}
-
-	#banner2 {
-		background-attachment: scroll,fixed;
-		background-color: #666;
-		background-image: url("../../images/red_sunset_narrow.jpg");
-		background-position: top left, center center;
-		background-repeat: no-repeat;text-align: center;
+		font-weight:bold;
 	}
 
 		#banner :last-child {
@@ -3275,6 +3202,7 @@
 			line-height: 1em;
 			margin: 0 0 0.5em 0;
 			padding: 0;
+			font-weight:500;
 		}
 
 		#banner p {
@@ -3323,6 +3251,92 @@
 				background: grey;
 				color: #fff;
 			}
+
+					
+			#banner2 {
+				background-attachment: scroll,fixed;
+				background-color: #666;
+				background-image: url("../../images/red_sunset_narrow.jpg");
+				background-position: top left, center center;
+				background-repeat: no-repeat;text-align: center;
+			}
+
+			#banner3 {
+				background-attachment: scroll,fixed;
+				background-color: #666;
+				background-image: url("images/overlay.png"), url("../../images/friends_field_hearts.jpg");
+				background-position: top left, center center;
+				background-repeat: repeat, no-repeat;
+				background-size: auto, cover;
+				color: #fff;
+				padding: 7em 0 6em 0;
+				text-align: center;
+				font-weight:bold;
+			}
+
+			#banner3 :last-child {
+				margin-bottom: 0;
+			}
+	
+			#banner3 h2, #banner3 h3, #banner3 h4, #banner3 h5, #banner3 h6 {
+				color: #fff;
+			}
+	
+			#banner3 h2 {
+				font-size: 3.5em;
+				line-height: 1em;
+				margin: 0 0 0.5em 0;
+				padding: 0;
+				font-weight:500;
+
+			}
+	
+			#banner3 p {
+				font-size: 1.25em;
+				margin-bottom: 1.75em;
+			}
+	
+			#banner3 input[type="submit"],
+			#banner3 input[type="reset"],
+			#banner3 input[type="button"],
+			#banner3 .button {
+				background-color: transparent;
+				box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+				color: #fff;
+				min-width: 12em;
+			}
+	
+				#banner3 input[type="submit"]:hover,
+				#banner3 input[type="reset"]:hover,
+				#banner3 input[type="button"]:hover,
+				#banner3 .button:hover {
+					background-color: rgba(255, 255, 255, 0.1);
+				}
+	
+				#banner3 input[type="submit"]:active,
+				#banner3 input[type="reset"]:active,
+				#banner3 input[type="button"]:active,
+				#banner3 .button:active {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+	
+				#banner3 input[type="submit"].primary,
+				#banner3 input[type="reset"].primary,
+				#banner3 input[type="button"].primary,
+				#banner3 .button.primary {
+					background: #fff;
+					color: #666 !important;
+				}
+	
+				#banner3 .button.secondary {
+					background: #585353;
+					color: #fff;
+				}
+	
+				#banner3 .button.tertiary {
+					background: grey;
+					color: #fff;
+				}
 
 /* Main */
 
@@ -3997,3 +4011,197 @@
 			}
 
 	}
+
+	/* styles.css */
+/* body {
+  }
+  
+  .popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+  }
+  
+  .hidden {
+	display: none;
+  }
+  
+  .popup-content {
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	width: 300px;
+	text-align: center;
+	position: relative;
+  }
+  
+  .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	font-size: 20px;
+	color: black;
+  } */
+
+  /* Boards Nav Menu */
+
+		body {
+			margin:0;
+		}
+
+		.container2 {
+			display:flex;
+			/* height:100vh; */
+			padding:0 0 0 15vh;
+		}
+
+		/* sidebar */
+
+			.sidebar {
+				width:300px;
+				/* height:100px; */
+				background-color: #333;
+				color: red;
+				padding: 0;
+				box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+			}
+
+			.sidebar ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			
+			.sidebar ul li {
+				margin: 0;
+			}
+			
+			.sidebar ul li a {
+				display: block;
+				padding: 15px;
+				color: white;
+				text-decoration: none;
+				transition: background 0.3s;
+			}
+			
+			.sidebar ul li a:hover {
+				background-color: #444;
+			}
+		
+		/* Content styling */
+
+			.content {
+				flex: 1;
+				padding: 20px;
+				background-color: #f4f4f4;
+			}
+
+			.page {
+				display: none;
+			}
+
+			.page.active {
+				display: block;
+			}
+
+	/* Pictures */
+
+	/* div 2 whole page 1 */
+	
+
+	/* div 3 row of pictures */
+	.slide-container {
+		/* padding: 1.5em 4em 0 4em; */
+		display:flex;
+		text-align:center;
+		justify-content:space-around;
+		flex-wrap:wrap;
+	}
+
+	/* div 4 individual picture */
+	.img_wrap {
+		position:relative;
+		width:17em;
+		height:18em;
+		padding:2em 0 0 0;
+	}
+
+	/* Popup */
+
+		.box {
+			background: #fff;
+			border-radius: 6px;
+			box-shadow: 0 2px 0 0 #e5e5e5;
+			margin: 0 0 2em 0;
+			padding: 3em;
+		}
+		
+		.board {
+			margin: 10em 0 0 0;
+			max-width:100%;
+		}
+
+		.logo {
+			height:3em;
+			margin:0 0 0 0;
+			/* width:40px; */
+		}
+
+		.profilePicture {
+			height:13em;
+			cursor:pointer;
+			width:12em;
+			transition: transform 0.3s ease;
+		}
+
+		.modal {
+			display:none;
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background-color: rgba(0,0,0,0.5);
+			z-index:1000;
+			align-items:center;
+			justify-content:center;
+		}
+
+		.profileDescription {
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			max-width: 500px;
+			width: 80%;
+			text-align: center;
+		}
+
+		.profilePicture:hover {
+			transform: scale(1.05);
+		}
+
+		.profileDescription {
+			background: white;
+			max-width: 500px;
+			width:88%;
+			text-align:left;
+		}
+
+		.close {
+			position: absolute;
+			top:16px;
+			right:10px;
+			font-size:18px;
+			font-weight:bold;
+			color:#333;
+			cursor:pointer;
+		}

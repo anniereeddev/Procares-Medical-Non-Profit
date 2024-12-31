@@ -1,8 +1,4 @@
-/*
-	Alpha by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 (function($) {
 
@@ -20,6 +16,7 @@
 			mobile:    ( '481px',   '736px'  ),
 			mobilep:   ( null,      '480px'  )
 		});
+	
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
@@ -78,32 +75,7 @@
 				});
 
 			});
-
-		}
-
-	// Picture Popup
-	<script>
-		{/* get modal, image, and close button */}
-		const modal = document.getElementById('myModal');
-		const triggerImage = document.getElementById('profilePicture');
-		const closeModal = document.getElementById('closeModal');
-
-		{/* Show modal on image click */}
-		triggerImage.addEventListener('click', () => {
-		modal.style.display = 'flex';
-		});
-
-		{/* Close modal on close button click */}
-		closeModal.addEventListener('click', () => {
-		modal.style.display = 'none';
-		});
-
-		{/* Close modal on clicking outside of modal content */}
-		window.addEventListener('click', (event) => {
-		if (event.target === modal) {
-			modal.style.display = 'none';
-		}
-		});
-	</script>
-
-})(jQuery);
+		
+		
+	
+		)	

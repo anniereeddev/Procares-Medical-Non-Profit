@@ -1,49 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiple Popups</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <button data-popup="popup1">Open Popup 1</button>
-  <button data-popup="popup2">Open Popup 2</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Procares Nonprofit</title>
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+<body class="landing is-preload">
+    <div id="page-wrapper">
+
+    <!-- Header -->
+
+    <header id="header" class="alt">
+        <h1><a href="index.html"></a> <img class="logo" src="images/logo-nobg.png" /> </h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li> 
+                <li>
+                    <a href="#">Information</a>
+                    <li><a href="#" class="button">Donate</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Banner -->
+				<section id="banner3">
+					<h2>Procares Medical Nonprofit</h2>
+					<p>Proares Board and staff members are experienced and dedicated professionals who are passionate about POTS research and medical care. Each member of our board their own perspective and commitment to our goal of building support for each person who has been diagnosed with POTS.</p>
+		
+				</section>
+
+    <!-- Profile Pictures -->
+    <section>
+
+        
+
+        <!-- pictures -->
+        
+        <div>
+
+            <section class="box">
+
+                <!-- List of Boards -->
+
+                <div class="container2">
+                    <!-- sidebar -->
+                    <div class="sidebar">
+                        <ul>
+                            <li><a href="#" data-target="page1">Physician Advisory Board</a></li>
+                            <li><a href="#" data-target="page2">Patient/Parent Advisory Board</a></li>
+                            <!-- <li><a href="#" data-target="page3">Page 3</a></li> -->
+                        </ul>
+                    </div>
+
+                    <!-- Boards -->
+                    <div class = "content"> <!-- div 1 overall container -->
+
+                        <!-- 1st page - Physician Advisory Board -->
+                        <div id="page1" class="page active"> <!-- div 2 whole page 1 -->
+                            <!-- Image container start -->
+                            <div class="slide-container"><!-- div 3 row of pictures-->
+                                <div class="img_wrap">  <!-- div 4 individual picture-->
+                                    <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
+                                    <h4>Dr. Warner</h4>
+                                </div>
+    
+                                <div class="img_wrap">
+                                    <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
+                                    <h4>Dr. Warner</h4>
+                                </div>
+    
+                                <div class="img_wrap">
+                                    <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
+                                    <h4>Dr. Warner</h4>
+                                </div>
+
+                                <div class="img_wrap">
+                                    <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
+                                    <h4>Dr. Warner</h4>
+                                </div>
+      
+                            </div>
+                           
+                        </div>
+
+                        <!-- 2nd page - Patient/Parent Advisory Board -->
+                        <div id="page2" class="page"><!-- div 2 whole page 2 -->
+                            <div class="slide-container"><!-- div 3 row of pictures-->
+                                <div class="img_wrap">  <!-- div 4 individual picture-->
+                                    <img src="images/doyle_jensen.jpg" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
+                                    <h4>Doyle Jensen</h4>
+                                </div>
+    
+                                <div class="img_wrap">
+                                    <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
+                                    <h4>Trine Jensen</h4>
+                                </div>
+    
+                                <div class="img_wrap">
+                                    <img src="images/lauren_miller2.jpg" alt="Lauren Miller Profile Picture" class="profilePicture" id="triggerImage">  
+                                    <h4>Lauren Miller</h4>
+                                </div>
+
+                                <div class="img_wrap">
+                                    <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
+                                    <h4>Brandy Bennett</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div id="page3" class="page">
+                            <h1>Welcome to Page 3</h1>
+                            <p>This is the content for Page 3.</p>
+                        </div> -->
+                    </div>
+                </div>
+            </section>
+
+        </div>
+            
+    </section>
+
+    <!-- Popup buttons -->
+  <!-- <button data-popup="popup1">Open Popup 1</button>
+  <button data-popup="popup2">Open Popup 2</button> -->
 
   <!-- Popup 1 -->
-  <div id="popup1" class="popup hidden">
+  <!-- <div id="popup1" class="popup hidden">
     <div class="popup-content">
       <span class="close">&times;</span>
       <section id="main" class="container">
 						
         <div class="box board">
             <h3>Physician Advisory Board</h3>
-            <p class="sub">The focus of the physician advisory board is to be in charge of clinical and medical related policy and statements.</p>
-            <h4>Dr. Warner</h4>
-
-            <!-- Image container start -->
-            <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage"> 
+            <p class="sub">The focus of the physician advisory board is to be in charge of clinical and medical related policy and statements.</p> -->
+            
             
             <!-- text container start -->
-            <div class="modal" id="myModal">
+            <!-- <div class="modal" id="myModal">
                 <div class="profileDescription">
                     <span class="close" id="closeModel">&times;</span>
                     <h2>Floating Web Page</h2>
                     <p>Dr. Warner is a triple board-certified physician specializing in general and cardiotheracic anesthesiology and interventional pain medicine. He graduated from the Univeristy of Utah having studied in both the school of business and college of science. He went on to graduate with honors from Ross University School of Medicine, followed by anesthesiology residency at the University of Texas. He completed additional fellowship training in cardiothoracic anesthesia and interventional pain medicine at Yale University and MD Anderson Cancer Center, respectively.</p>
                 </div>
-            </div>
+            </div> -->
             <!-- text container end -->
 
-        </div>
+        <!-- </div>
     </section> 
 
       <h2>Popup 1</h2>
       <p>This is the first pop-up window.</p>
     </div>
-  </div>
+  </div> -->
 
   <!-- Popup 2 -->
-  <div id="popup2" class="popup hidden">
+  <!-- <div id="popup2" class="popup hidden">
     <div class="popup-content">
       <span class="close">&times;</span>
       <section id="main" class="container">
@@ -54,14 +165,14 @@
             <h4>Lauren Miller</h4>
             <p>Lauren loves her family, frenchies, and finance. She has a BS in honors finance from the University of Utah. She worked in private equity for a few years before going back to school to earn on MBA from George Washington University. Since graduating from GWU in 2021, she has worked for the Larry H and Gail Mill Family Foundation doing private asset allocation. She has a sister with dysautonomia diseases and she has watched her suffer for the past decade. It has been a family fight and Lauren is passionate in doing what she can to help further the research and doctor education surrounding this disease state. Lauren has a wonderful husband, Josh, two young kids, and two French bulldogs. It's a fun and chaotic household.</p>
         </div>
-    </section> 
+    </section>  -->
 
     
 
-</section>
+<!-- </section> -->
 
 <!-- CTA -->
-<section id="cta">
+<!-- <section id="cta"> -->
 
     <!-- <h2>Sign up for weekly updates</h2>
     <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
@@ -77,11 +188,11 @@
         </div>
     </form> -->
 
-</section>
+<!-- </section>
       <h2>Popup 2</h2>
       <p>This is the second pop-up window.</p>
     </div>
-  </div>
+  </div> -->
 
   <script src="script.js"></script>
 </body>

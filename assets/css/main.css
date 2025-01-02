@@ -109,7 +109,7 @@
 	}
 
 	body, input, select, textarea {
-		color: #302d2d;
+		color: #black;
 		font-family: "Source Sans Pro", sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -4012,47 +4012,34 @@
 
 	}
 
-	/* styles.css */
-/* body {
-  }
-  
-  .popup {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	z-index: 1000;
-  }
-  
-  .hidden {
-	display: none;
-  }
-  
-  .popup-content {
-	background-color: white;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-	width: 300px;
-	text-align: center;
-	position: relative;
-  }
-  
-  .close {
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	cursor: pointer;
-	font-size: 20px;
-	color: black;
-  } */
+	
+	/* General formatting */
 
-  /* Boards Nav Menu */
+		.box {
+			background: #fff;
+			border-radius: 6px;
+			box-shadow: 0 2px 0 0 #e5e5e5;
+			margin: 0 0 2em 0;
+			padding: 3em;
+		}
+
+		.board {
+			margin: 10em 0 0 0;
+			max-width:100%;
+		}
+
+		.logo {
+			height:3em;
+			margin:0 0 0 0;
+			/* width:40px; */
+		}
+
+		.indexBoard {
+			height:11.5em;
+			margin:0 0 10px 0;
+		}
+
+  	/* Boards Nav Menu */
 
 		body {
 			margin:0;
@@ -4119,72 +4106,71 @@
 	
 
 	/* div 3 row of pictures */
-	.slide-container {
-		/* padding: 1.5em 4em 0 4em; */
-		display:flex;
-		text-align:center;
-		justify-content:space-around;
-		flex-wrap:wrap;
-	}
+
+		.slide-container {
+			/* padding: 1.5em 4em 0 4em; */
+			display:flex;
+			text-align:center;
+			/* justify-content:space-around; */
+			flex-wrap:wrap;
+		}
 
 	/* div 4 individual picture */
-	.img_wrap {
-		position:relative;
-		width:17em;
-		height:18em;
-		padding:2em 0 0 0;
-	}
+
+		.img_wrap {
+			position:relative;
+			width:17em;
+			height:18em;
+			padding:2em 0 0 0;
+		}
 
 	/* Popup */
 
-		.box {
-			background: #fff;
-			border-radius: 6px;
-			box-shadow: 0 2px 0 0 #e5e5e5;
-			margin: 0 0 2em 0;
-			padding: 3em;
-		}
+		/* Style for modal background */
 		
-		.board {
-			margin: 10em 0 0 0;
-			max-width:100%;
+		.modal {
+			display:none; /*Hidden by default*/
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background-color: rgba(0,0,0,0.5); /* semi-transparent background */
+			z-index:1000;
+			align-items:center;
+			justify-content:center;
 		}
 
-		.logo {
-			height:3em;
-			margin:0 0 0 0;
-			/* width:40px; */
+		/* Style for modal content */
+
+		.modalContent {
+			background: white;
+			padding: 20px;
+			border-radius: 8px;
+			max-width: 1000px;
+			width: 80%;
+			text-align: center;
 		}
 
+		 /* Close button */
+		.close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			font-size: 18px;
+			font-weight: bold;
+			color: #333;
+			cursor: pointer;
+		}	  
+
+		   /* Style the image */
 		.profilePicture {
 			height:13em;
 			cursor:pointer;
 			width:12em;
 			transition: transform 0.3s ease;
 		}
-
-		.modal {
-			display:none;
-			position:fixed;
-			top:0;
-			left:0;
-			width:100%;
-			height:100%;
-			background-color: rgba(0,0,0,0.5);
-			z-index:1000;
-			align-items:center;
-			justify-content:center;
-		}
-
-		.profileDescription {
-			background: white;
-			padding: 20px;
-			border-radius: 8px;
-			max-width: 500px;
-			width: 80%;
-			text-align: center;
-		}
-
+	  
 		.profilePicture:hover {
 			transform: scale(1.05);
 		}
@@ -4196,12 +4182,40 @@
 			text-align:left;
 		}
 
-		.close {
-			position: absolute;
-			top:16px;
-			right:10px;
-			font-size:18px;
-			font-weight:bold;
-			color:#333;
-			cursor:pointer;
+		/* Bio formatting */
+
+		/* containter for image and description */
+		.bio {
+			display: flex; /* Enables horizontal layout */
+			align-items: center; /* Centers content vertically */
+			gap: 20px; /* Adds space between image and description */
+			margin: 20px;
 		}
+
+		/* Style for the image */
+		.bio img {
+			/* Adjust image size */
+			/* max-width: 200px;  */
+			height: auto; /* Maintain aspect ratio */
+			border-radius: 8px; /* Optional: rounded corners */
+			padding: 0 0 2em 0;
+		}
+
+		.bio p {
+			max-width: 600px;
+      		font-size: 22px;
+      		line-height: 1.5;
+			text-align:left;
+		}
+
+		.description {
+			display:inline;
+			text-align:left;
+			padding: 0 0 0 2em;
+		}
+
+		.description h4 {
+			color:rgb(11, 11, 187);
+		}
+
+		

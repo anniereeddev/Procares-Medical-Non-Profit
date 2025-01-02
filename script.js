@@ -1,5 +1,5 @@
-// nav
-
+// nav script for Boards Navigation
+(() => {
 	// script.js
     document.querySelectorAll(".sidebar a").forEach(link => {
         link.addEventListener("click", function (e) {
@@ -17,24 +17,32 @@
         document.getElementById(targetId).classList.add("active");
         });
     });
+})();
     
 	// popup
-	// Open the appropriate popup
-	// document.querySelectorAll("[data-popup]").forEach(button => {
-	// 	button.addEventListener("click", function () {
-	// 	  const popupId = this.getAttribute("data-popup");
-	// 	  document.getElementById(popupId).classList.remove("hidden");
-	// 	});
-	//   });
-	
-	// Close the popup
-	//   document.querySelectorAll(".popup").forEach(popup => {
-	// 	popup.addEventListener("click", function (e) {
-	// 	  if (e.target === this || e.target.classList.contains("close")) {
-	// 		this.classList.add("hidden");
-	// 	  }
-	// 	});
-	//   });
+	(() => {
+	 // Get modal, image, and close button
+		const modal = document.getElementById('myModal');
+		const triggerImage = document.getElementById('triggerImage');
+		const closeModal = document.getElementById('closeModal');
+ 
+	 // Show modal on image click
+		triggerImage.addEventListener('click', () => {
+		modal.style.display = 'flex';
+		});
+ 
+	 // Close modal on close button click
+		closeModal.addEventListener('click', () => {
+		modal.style.display = 'none';
+		});
+ 
+	 // Close modal on clicking outside of modal content
+		window.addEventListener('click', (event) => {
+		if (event.target === modal) {
+			modal.style.display = 'none';
+		}
+		});
+	})();
 
 
 		

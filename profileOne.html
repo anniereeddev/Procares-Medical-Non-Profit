@@ -47,8 +47,8 @@
                     <!-- sidebar -->
                     <div class="sidebar">
                         <ul>
-                            <li><a href="#" data-target="page1">Physician Advisory Board</a></li>
-                            <li><a href="#" data-target="page2">Patient/Parent Advisory Board</a></li>
+                            <li><a href="profileOne.html" data-target="page1">Physician Advisory Board</a></li>
+                            <li><a href="profileTwo.html" data-target="page2">Patient/Parent Advisory Board</a></li>
                             <!-- <li><a href="#" data-target="page3">Page 3</a></li> -->
                         </ul>
                     </div>
@@ -57,11 +57,15 @@
                     <div class = "content"> <!-- div 1 overall container -->
 
                         <!-- 1st page - Physician Advisory Board -->
-                        <div id="page1" class="page active"> <!-- div 2 whole page 1 -->
+                        <div class="page active"> <!-- div 2 whole page 1 -->
                             <!-- Image container start -->
                             <div class="slide-container"><!-- div 3 row of pictures-->
                                 <div class="img_wrap warner">  <!-- div 4 individual picture dr. warner-->
-                                    <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
+                                    <img src="images/blank-profile-picture.webp" 
+                                    alt="Warner Profile Picture" 
+                                    class="profilePicture triggerImage" 
+                                    id="triggerImage1"
+                                    data-target="myModal">  
                                     <h4>Dr. Warner</h4>
                                 </div>
 
@@ -71,7 +75,9 @@
                                     <div class="modalContent">
                                       <span class="close" id="closeModal">&times;</span>
                                       <div class="bio"> <!-- div that contains all modal content-->
-                                        <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">
+                                        <img src="images/blank-profile-picture.webp" 
+                                        alt="Warner Profile Picture" 
+                                        class="profilePicture2" >
                                         <div class="description">  <!-- this div contains only description information -->
                                             <h4>Dr. Warner</h4>
                                             <p>Dr. Warner is a triple board-certified physician specializing in general and cardiotheracic anesthesiology and interventional pain medicine. He graduated from the Univeristy of Utah having studied in both the school of business and college of science. He went on to graduate with honors from Ross University School of Medicine, followed by anesthesiology residency at the University of Texas. He completed additional fellowship training in cardiothoracic anesthesia and interventional pain medicine at Yale University and MD Anderson Cancer Center, respectively.</p>
@@ -84,49 +90,7 @@
                            
                         </div>
 
-                        <!-- 2nd page - Patient/Parent Advisory Board -->
-                        <div id="page2" class="page"><!-- div 2 whole page 2 -->
-                            <div class="slide-container"><!-- div 3 row of pictures-->
-                                <div class="img_wrap">  <!-- div 4 individual picture doyle jensen-->
-                                    <img src="images/doyle_jensen.jpg" alt="Doyle Jensen Profile Picture" class="profilePicture" id="triggerImage">  
-                                    <h4>Doyle Jensen</h4>
-                                </div>
-
-                                <!-- modal 2 doyle jensen  -->
-
-                                <div class="modal" id="myModal">
-                                    <div class="modalContent">
-                                      <span class="close" id="closeModal">&times;</span>
-                                      <div class="bio"> <!-- div that contains all modal content-->
-                                        <img src="images/doyle_jensen.jpg" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">
-                                        <div class="description">  <!-- this div contains only description information -->
-                                            <h4>Doyle Jensen</h4>
-                                            <p>Doyle Jensen Description</p>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-    
-                                <div class="img_wrap">
-                                    <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
-                                    <h4>Trine Jensen</h4>
-                                </div>
-    
-                                <div class="img_wrap">
-                                    <img src="images/lauren_miller2.jpg" alt="Lauren Miller Profile Picture" class="profilePicture" id="triggerImage">  
-                                    <h4>Lauren Miller</h4>
-                                </div>
-
-                                <div class="img_wrap">
-                                    <img src="images/blank-profile-picture.webp" alt="Warner Profile Picture" class="profilePicture" id="triggerImage">  
-                                    <h4>Brandy Bennett</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div id="page3" class="page">
-                            <h1>Welcome to Page 3</h1>
-                            <p>This is the content for Page 3.</p>
-                        </div> -->
+                        
                     </div>
                 </div>
             </section>
@@ -134,67 +98,7 @@
         </div>
             
     </section> 
-            
-            
-            <!-- text container start -->
-            <!-- <div class="modal" id="myModal">
-                <div class="profileDescription">
-                    <span class="close" id="closeModel">&times;</span>
-                    <h2>Floating Web Page</h2>
-                    <p>Dr. Warner is a triple board-certified physician specializing in general and cardiotheracic anesthesiology and interventional pain medicine. He graduated from the Univeristy of Utah having studied in both the school of business and college of science. He went on to graduate with honors from Ross University School of Medicine, followed by anesthesiology residency at the University of Texas. He completed additional fellowship training in cardiothoracic anesthesia and interventional pain medicine at Yale University and MD Anderson Cancer Center, respectively.</p>
-                </div>
-            </div> -->
-            <!-- text container end -->
-
-        <!-- </div>
-    </section> 
-
-      <h2>Popup 1</h2>
-      <p>This is the first pop-up window.</p>
-    </div>
-  </div> -->
-
-  <!-- Popup 2 -->
-  <!-- <div id="popup2" class="popup hidden">
-    <div class="popup-content">
-      <span class="close">&times;</span>
-      <section id="main" class="container">
-						
-        <div class="box board">
-            <h3>Parent and Patient Board</h3>
-            <p class="sub">The focus of the Parent and Patient board is to represent all patients with these disease states.</p>
-            <h4>Lauren Miller</h4>
-            <p>Lauren loves her family, frenchies, and finance. She has a BS in honors finance from the University of Utah. She worked in private equity for a few years before going back to school to earn on MBA from George Washington University. Since graduating from GWU in 2021, she has worked for the Larry H and Gail Mill Family Foundation doing private asset allocation. She has a sister with dysautonomia diseases and she has watched her suffer for the past decade. It has been a family fight and Lauren is passionate in doing what she can to help further the research and doctor education surrounding this disease state. Lauren has a wonderful husband, Josh, two young kids, and two French bulldogs. It's a fun and chaotic household.</p>
-        </div>
-    </section>  -->
-
-    
-
-<!-- </section> -->
-
-<!-- CTA -->
-<!-- <section id="cta"> -->
-
-    <!-- <h2>Sign up for weekly updates</h2>
-    <p>Blandit varius ut praesent nascetur eu penatibus nisi risus faucibus nunc.</p>
-
-    <form>
-        <div class="row gtr-50 gtr-uniform">
-            <div class="col-8 col-12-mobilep">
-                <input type="email" name="email" id="email" placeholder="Email Address" />
-            </div>
-            <div class="col-4 col-12-mobilep">
-                <input type="submit" value="Sign Up" class="fit" />
-            </div>
-        </div>
-    </form> -->
-
-<!-- </section>
-      <h2>Popup 2</h2>
-      <p>This is the second pop-up window.</p>
-    </div>
-  </div> -->
-
+ \
   <script src="script.js"></script>
 </body>
 </html>

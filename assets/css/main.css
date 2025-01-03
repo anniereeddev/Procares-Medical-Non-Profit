@@ -4092,9 +4092,9 @@
 				background-color: #f4f4f4;
 			}
 
-			.page {
+			/* .page {
 				display: none;
-			}
+			} */
 
 			.page.active {
 				display: block;
@@ -4147,8 +4147,8 @@
 			background: white;
 			padding: 20px;
 			border-radius: 8px;
-			max-width: 1000px;
-			width: 80%;
+			/* max-width: 1000px;
+			width: 80%; */
 			text-align: center;
 		}
 
@@ -4175,12 +4175,12 @@
 			transform: scale(1.05);
 		}
 
-		.profileDescription {
+		/* .profileDescription {
 			background: white;
 			max-width: 500px;
 			width:88%;
 			text-align:left;
-		}
+		} */
 
 		/* Bio formatting */
 
@@ -4193,9 +4193,10 @@
 		}
 
 		/* Style for the image */
-		.bio img {
+		.profilePicture2 {
 			/* Adjust image size */
-			/* max-width: 200px;  */
+			max-width: 700px; 
+			width:500px;
 			height: auto; /* Maintain aspect ratio */
 			border-radius: 8px; /* Optional: rounded corners */
 			padding: 0 0 2em 0;
